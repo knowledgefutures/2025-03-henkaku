@@ -1,0 +1,111 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import { LayoutPanelTop, Settings, SquareGanttChart, Users, Workflow } from 'lucide-react';
+import '~/styles/globals.css';
+const pathname = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="2025-03 Henkaku Knowledge Engine" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="">
+		<div class="flex min-h-[calc(100vh)] w-full flex-col bg-muted/40">
+			<aside
+				class="fixed inset-y-0 left-0 z-1 flex-col border-r bg-background flex w-[250px]"
+			>
+				<div class="flex h-full max-h-screen flex-col gap-2">
+					<div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
+						<a
+							href="/"
+							class="flex items-center gap-2 font-semibold hover:no-underline"
+						>
+							<img class="h-6 w-6" src="/logo.png" alt="Logo" />
+							<span class="">Henkaku Knowledge Engine</span>
+						</a>
+					</div>
+					<div class="flex-1">
+						<nav class="grid items-start px-2 text-sm font-medium lg:px-4">
+							<a
+								href="/admin/pubs"
+								class={`flex items-center gap-3 rounded-lg px-3 py-2 ${
+									pathname.includes('/pubs')
+										? 'bg-muted text-primary'
+										: 'text-muted-foreground'
+								} transition-all hover:text-primary hover:no-underline`}
+							>
+								<SquareGanttChart className="h-4 w-4" />
+								Pubs
+							</a>
+							<a
+								href="/admin/types"
+								class={`flex items-center gap-3 rounded-lg px-3 py-2 ${
+									pathname.includes('/types')
+										? 'bg-muted text-primary'
+										: 'text-muted-foreground'
+								} transition-all hover:text-primary hover:no-underline`}
+							>
+								<LayoutPanelTop className="h-4 w-4" />
+								Types
+							</a>
+							<a
+								href="/admin/workflow"
+								class={`flex items-center gap-3 rounded-lg px-3 py-2 ${
+									pathname.includes('/workflow')
+										? 'bg-muted text-primary'
+										: 'text-muted-foreground'
+								} transition-all hover:text-primary hover:no-underline`}
+							>
+								<Workflow className="h-4 w-4" />
+								Workflow
+							</a>
+							<a
+								href="/admin/members"
+								class={`flex items-center gap-3 rounded-lg px-3 py-2 ${
+									pathname.includes('/members')
+										? 'bg-muted text-primary'
+										: 'text-muted-foreground'
+								} transition-all hover:text-primary hover:no-underline`}
+							>
+								<Users className="h-4 w-4" />
+								Members
+							</a>
+							<a
+								href="/admin/settings"
+								class={`flex items-center gap-3 rounded-lg px-3 py-2 ${
+									pathname.includes('/settings')
+										? 'bg-muted text-primary'
+										: 'text-muted-foreground'
+								} transition-all hover:text-primary hover:no-underline`}
+							>
+								<Settings className="h-4 w-4" />
+								Settings
+							</a>
+						</nav>
+					</div>
+				</div>
+			</aside>
+			<main class="ml-[250px] flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+				<slot />
+			</main>
+		</div>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+</style>

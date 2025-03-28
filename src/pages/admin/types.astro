@@ -1,0 +1,67 @@
+---
+import TypeBlock from '~/components/TypeBlock.astro';
+import AdminLayout from '~/layouts/AdminLayout.astro';
+
+import {article,
+agenda,
+exhibit,
+keynoteSpeaker,
+attendee,
+sponsor,
+whitePaper,
+unconference}  from '~/data/samples';
+
+// import authors from '~/data/authors.json';
+// import comments from '~/data/comments';
+// import contributors from '~/data/contributors.json';
+// import genomeNotes from '~/data/genomeNotes.json';
+// import manualReviews from '~/data/manualReviews.json';
+// import posts from '~/data/posts.json';
+// import projects from '~/data/projects.json';
+// import protocols from '~/data/protocols.json';
+// import technicalReviews from '~/data/technicalReviews.json';
+// import collectiveAuthors from '~/data/collectiveAuthors.json';
+
+import type { PubType } from '~/types/pubs';
+const getTypeFields = (item: Record<string, any>) => {
+	return Object.keys(item).map((key) => {
+		return { key, value: typeof item[key] };
+	});
+};
+
+const types: PubType[] = [
+	{ name: 'Article', fields: getTypeFields(article) },
+	{ name: 'Agenda', fields: getTypeFields(agenda) },
+	{ name: 'Exhibit', fields: getTypeFields(exhibit) },
+	{ name: 'Keynote Speaker', fields: getTypeFields(keynoteSpeaker) },
+	{ name: 'Attendee', fields: getTypeFields(attendee) },
+	{ name: 'Sponsor', fields: getTypeFields(sponsor) },
+	{ name: 'White Paper', fields: getTypeFields(whitePaper) },
+	{ name: 'Unconference', fields: getTypeFields(unconference) },
+	// { name: 'Species', fields: getTypeFields(genomes[0]) },
+	// { name: 'Genome Note', fields: getTypeFields(genomeNotes[0]) },
+	// { name: 'Author', fields: getTypeFields(authors[0]) },
+	// { name: 'Contributor', fields: getTypeFields(contributors[0]) },
+	// { name: 'Technical Review', fields: getTypeFields(technicalReviews[0]) },
+	// { name: 'Manual Review', fields: getTypeFields(manualReviews[0]) },
+	// { name: 'Comment', fields: getTypeFields(comments[0]) },
+	// { name: 'Post', fields: getTypeFields(posts[0]) },
+	// { name: 'Protocol', fields: getTypeFields(protocols[0]) },
+	// { name: 'Collective Author', fields: getTypeFields(collectiveAuthors[0]) },
+];
+---
+
+<AdminLayout title="Types · Admin">
+	<div>
+		<div class="flex items-center">
+			<h1 class="text-lg font-semibold md:text-2xl">Types</h1>
+		</div>
+		<div class="grid grid-cols-3 gap-6 my-8">
+			{
+				types.map((type) => {
+					return <TypeBlock type={type} />;
+				})
+			}
+		</div>
+	</div>
+</AdminLayout>

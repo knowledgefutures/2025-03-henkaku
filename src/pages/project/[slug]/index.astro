@@ -1,0 +1,150 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { formatDate, getProjects, getPublishedAtString } from '~/lib/pubs';
+import { buttonVariants } from '~/components/ui/button';
+import { marked } from 'marked';
+import { Link, Mail } from 'lucide-react';
+import type { Project } from '~/types/pubs';
+
+export function getStaticPaths() {
+	const projects = getProjects();
+	return projects
+		.filter((project) => !!project.slug)
+		.map((project) => {
+			return { params: { slug: project.slug } };
+		});
+}
+const { slug } = Astro.params;
+const projects = getProjects();
+const activeProject = projects.find((project) => {
+	return project.slug === slug;
+});
+if (!activeProject) {
+	return null;
+}
+---
+
+<Layout title={`${activeProject.name} · Henkaku`}>
+	<main class="">
+		<section class="w-content my-9 flex">
+			{
+				activeProject.logo && (
+					<div>
+						<img class="rounded-lg max-w-20 mr-10" src="/sampleProj.png" />
+					</div>
+				)
+			}
+			<div class="flex-1">
+				<div class="text-4xl font-bold mb-2">{activeProject.name}</div>
+				<div class="flex gap-x-2">
+					<div class="font-bold">{activeProject.stage}</div>
+					<!-- <div>|</div> -->
+					<!-- <div>Last updated: {formatDate(activeProject.updatedAt)}</div> -->
+					{
+						activeProject.launchDate && (
+							<>
+								<div>|</div>
+								<div>Launch date: {formatDate(activeProject.launchDate)}</div>
+							</>
+						)
+					}
+				</div>
+			</div>
+			<div class="flex items-center gap-x-6">
+				<div>
+					<a
+						href={activeProject.website}
+						class={buttonVariants({ variant: 'accentOutline' })}><Link /> Website</a
+					>
+				</div>
+				{
+					activeProject.email && (
+						<div>
+							<a href="" class={buttonVariants({ variant: 'accentOutline' })}>
+								<Mail /> Contact
+							</a>
+						</div>
+					)
+				}
+			</div>
+		</section>
+		<section class="bg-neutral-100 text-xl">
+			<div class="w-content py-14 space-y-14">
+				<div class="font-bold text-3xl mb-8">Project Details</div>
+				<div class="grid md:grid-cols-5 gap-36">
+					<div class="col-span-3">
+						{
+							activeProject.projectDescription && (
+								<>
+									<div class="font-bold mb-5">Description</div>
+									<div
+										class="markdown-content mb-10"
+										set:html={
+											marked.parse(activeProject.projectDescription) || ''
+										}
+									/>
+								</>
+							)
+						}
+					</div>
+					<div class="space-y-8 col-span-2">
+						{
+							activeProject.organization?.length && (
+								<div>
+									<div class="font-bold">Primary Organiztion</div>
+									<div>{activeProject.organization[0].name}</div>
+								</div>
+							)
+						}
+						{
+							activeProject.area.length && (
+								<div>
+									<div class="font-bold">Project Area</div>
+									<div class="flex gap-x-2 flex-wrap">
+										{activeProject.area.map((area, index, array) => {
+											return (
+												<>
+													<a
+														href={`/projects?area=${area}`}
+														class="text-sky-500"
+													>
+														{area}
+													</a>
+													{index !== array.length - 1 && <div>·</div>}
+												</>
+											);
+										})}
+									</div>
+								</div>
+							)
+						}
+						{
+							activeProject.stage && (
+								<div>
+									<div class="font-bold">Research Lifecycle Stage</div>
+									<div>{activeProject.stage}</div>
+								</div>
+							)
+						}
+						{
+							activeProject.outputs?.length && (
+								<div>
+									<div class="font-bold">Project Output</div>
+									<div>{activeProject.outputs.join(', ')}</div>
+								</div>
+							)
+						}
+						{
+							activeProject.region && (
+								<div>
+									<div class="font-bold">Region</div>
+									<div>{activeProject.region}</div>
+								</div>
+							)
+						}
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

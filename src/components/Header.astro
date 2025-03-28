@@ -1,0 +1,79 @@
+---
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+// const { href, title, body } = Astro.props;
+
+import logo from '~/assets/logo.png';
+import { Image } from 'astro:assets';
+import LandingInput from './LandingInput';
+import { buttonVariants } from '~/components/ui/button';
+
+const isLanding = Astro.url.pathname === '/';
+const isExplore = Astro.url.pathname.startsWith('/projects');
+const isAbout = Astro.url.pathname.startsWith('/about');
+const isSubmit = Astro.url.pathname.startsWith('/submit');
+const links = [
+	{ title: 'About', href: '/about', active: Astro.url.pathname.startsWith('/about') },
+	{ title: 'Projects', href: '/projects', active: Astro.url.pathname.startsWith('/projects') },
+	// { title: 'News & Events', href: '/news', active: Astro.url.pathname.startsWith('/news') },
+	{
+		title: 'Submit',
+		href: '/submit',
+		button: true,
+		// active: Astro.url.pathname.startsWith('/submit'),
+	},
+];
+---
+
+<section class={`bg-[#2a2a2a] bg-[url('/header.png')] bg-cover relative ${isExplore || isSubmit || isAbout ? 'pb-32' : ''}`}>
+	<div class="w-content relative">
+		<nav
+			class={`py-4 flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between items-center border-b-neutral-300 text-white`}
+		>
+			<div class="relative">
+				<a href="/" class="flex items-center gap-6 font-light text-xl uppercase tracking-widest"
+					><Image class="h-10 w-10" src={logo} alt="logo" /> <span>Henkaku Knowledge Engine</span></a
+				>
+			</div>
+			<div class="flex space-x-8 items-center">
+				{
+					links.map((link) => {
+						return (
+							<a
+								href={link.href}
+								class={`${link.active ? 'underline underline-offset-4' : 'underline-offset-4'}
+										${link.button ? buttonVariants({ variant: 'outline', class: 'bg-white' }) : ''}
+										${link.button ? 'text-black' : ''}
+								`}
+							>
+								{link.title}
+							</a>
+						);
+					})
+				}
+			</div>
+		</nav>
+		{
+			isLanding && (
+				<div class="flex items-center max-w-screen-md mx-auto px-4 md:px-0">
+					<div class="w-full mt-32 md:mt-44 mb-36 text-center text-white">
+						<div class="text-4xl md:text-5xl font-bold max-w-screen-sm m-auto">
+							CIT Henkaku Center Knowledge Engine
+						</div>
+						<div class="text-xl md:text-2xl my-6">
+							Powering discovery, connection, and contribution across the Henkaku Center’s research ecosystem.
+						</div>
+						<LandingInput client:load />
+						{/* <div class="text-white/70 mt-6 text-lg text-center space-x-20">
+							<a href="/submit">Submit work</a>
+							<a href="/about">Learn more</a>
+						</div> */}
+					</div>
+				</div>
+			)
+		}
+	</div>
+</section>

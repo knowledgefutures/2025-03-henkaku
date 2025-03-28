@@ -1,0 +1,11 @@
+---
+import AdminLayout from '~/layouts/AdminLayout.astro';
+import WorkflowGrid from '~/components/WorkflowGrid';
+---
+
+<AdminLayout title="Workflow · Admin">
+	<div class="">
+		<!-- <h1 class="text-lg font-semibold md:text-2xl absolute">Workflow</h1> -->
+		<WorkflowGrid client:load />
+	</div>
+</AdminLayout>

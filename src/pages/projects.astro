@@ -1,0 +1,21 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { getProjects } from '~/lib/pubs';
+import ProjectExplore from '~/components/ProjectExplore';
+const projects = getProjects();
+---
+
+<Layout title="">
+	<main class="relative z-50 -mt-32">
+		<section class="mb-32 min-h-svh">
+			<div class="pt-12 pb-20 -mb-12">
+				<h2 class="text-5xl font-light mb-8 w-content text-white">All Projects</h2>
+			</div>
+			<div class="w-content">
+				<div class="grid md:grid-cols-[250px,1fr] gap-8">
+					<ProjectExplore allProjects={projects} client:only="react" />
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

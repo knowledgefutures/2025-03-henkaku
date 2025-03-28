@@ -1,0 +1,11 @@
+---
+import AdminLayout from '~/layouts/AdminLayout.astro';
+import AdminPubsTable from '~/components/AdminPubsTable';
+---
+
+<AdminLayout title="Pubs · Admin">
+	<div class="">
+		<h1 class="text-lg font-semibold md:text-2xl">Pubs</h1>
+		<AdminPubsTable client:load />
+	</div>
+</AdminLayout>

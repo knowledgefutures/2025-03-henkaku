@@ -1,0 +1,50 @@
+---
+import { Edit2 } from 'lucide-react';
+import { Button } from '~/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '~/components/ui/card';
+import type { PubType } from '~/types/pubs';
+
+interface Props {
+	type: PubType;
+}
+
+const { type } = Astro.props;
+const basefields = [];
+function slugifyString(str: string): string {
+	return str.toLowerCase().replace(/\s+/g, '-');
+}
+
+basefields.push(slugifyString(type.name));
+---
+
+<Card className="overflow-hidden">
+	<CardHeader className="flex flex-row items-start bg-muted/50">
+		<div class="grid gap-0.5">
+			<CardTitle className="group flex items-center gap-2 text-lg">
+				{type.name}
+			</CardTitle>
+			<CardDescription>ugnr/{slugifyString(type.name)}</CardDescription>
+		</div>
+		<div class="ml-auto flex items-center gap-1">
+			<Button size="icon" variant="outline" className="h-8 gap-1">
+				<Edit2 className="h-3.5 w-3.5" />
+			</Button>
+		</div>
+	</CardHeader>
+	<CardContent className="p-6 text-sm max-h-48 overflow-scroll">
+		<div class="grid gap-3 font-mono">
+			<ul class="grid gap-3">
+				{
+					type.fields.map((field) => {
+						return (
+							<li class="flex items-center justify-between">
+								<span>{field.key}</span>
+								<span class="text-muted-foreground">{field.value}</span>
+							</li>
+						);
+					})
+				}
+			</ul>
+		</div>
+	</CardContent>
+</Card>

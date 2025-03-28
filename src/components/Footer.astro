@@ -1,0 +1,28 @@
+---
+import logo from '~/assets/logo.png';
+import DemoCard from '~/components/DemoCard';
+import { Image } from 'astro:assets';
+const links = [
+	{ text: 'About', href: '/about' },
+	{ text: 'Spaces', href: '/' },
+	{ text: 'Submit', href: '/submit' },
+	{ text: 'Contact', href: '/contact' },
+	{ text: 'RSS Feed', href: '/rss.xml' },
+];
+---
+
+<section class={`bg-[url('/header.png')] bg-cover bg- py-20 text-white`}>
+	<div class="w-content flex flex-col items-center md:flex-row md:items-start md:justify-between">
+		<!-- <div><Image class="h-24 w-24" src={logo} alt="logo" /></div> -->
+		<div><DemoCard client:load /></div>
+		<div
+			class="mt-16 md:my-0 flex md:flex-col space-x-8 md:space-x-0 md:items-end md:space-y-4"
+		>
+			{
+				links.map(({ text, href }) => {
+					return <a href={href}>{text}</a>;
+				})
+			}
+		</div>
+	</div>
+</section>
