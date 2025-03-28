@@ -1,0 +1,396 @@
+{
+	"projects": [
+		{
+			"id": "1a2b3c4d-5678-9101-1121-314151617181",
+			"updatedAt": "2025-03-13T21:24:54.896Z",
+			"createdAt": "2025-03-13T21:24:54.896Z",
+			"currentStageId": "383172ba-1399-4f79-a66e-c92a90c0fd3e",
+			"slug": "neurodiversity-tech-integration-initiative",
+			"name": "Neurodiversity Tech Integration Initiative",
+			"website": "https://www.henkaku.org/projects/neurodiversity-tech-integration",
+			"projectDescription": "Developing technology solutions that support and enhance the inclusion of neurodiverse individuals in various sectors.",
+			"area": ["Accessibility", "Technology Integration"],
+			"stage": ["Research"]
+		},
+		{
+			"id": "2b3c4d5e-6789-0123-2234-415161718192",
+			"updatedAt": "2025-03-13T21:25:54.896Z",
+			"createdAt": "2025-03-13T21:25:54.896Z",
+			"currentStageId": "493172ba-2399-4f79-b66e-d92a90c0fd4f",
+			"slug": "blockchain-social-impact-lab",
+			"name": "Blockchain for Social Impact Lab",
+			"website": "https://www.henkaku.org/projects/blockchain-social-impact",
+			"projectDescription": "Exploring blockchain applications aimed at addressing social challenges and promoting equitable solutions.",
+			"area": ["Blockchain", "Social Innovation"],
+			"stage": ["Development"]
+		},
+		{
+			"id": "3c4d5e6f-7890-1234-3345-516171819203",
+			"updatedAt": "2025-03-13T21:26:54.896Z",
+			"createdAt": "2025-03-13T21:26:54.896Z",
+			"currentStageId": "5a3172ba-3399-4f79-c66e-e92a90c0fd5g",
+			"slug": "open-source-education-platforms-project",
+			"name": "Open Source Education Platforms Project",
+			"website": "https://www.henkaku.org/projects/open-source-education-platforms",
+			"projectDescription": "Creating and promoting open-source platforms to enhance accessibility and quality of education globally.",
+			"area": ["Education", "Open Source"],
+			"stage": ["Ongoing"]
+		},
+		{
+			"id": "4d5e6f7g-8901-2345-4456-617181920314",
+			"updatedAt": "2025-03-13T21:27:54.896Z",
+			"createdAt": "2025-03-13T21:27:54.896Z",
+			"currentStageId": "6b3172ba-4399-4f79-d66e-f92a90c0fd6h",
+			"slug": "ai-ethics-governance-frameworks",
+			"name": "AI Ethics and Governance Frameworks",
+			"website": "https://www.henkaku.org/projects/ai-ethics-governance",
+			"projectDescription": "Developing ethical guidelines and governance models for the responsible deployment of artificial intelligence systems.",
+			"area": ["Artificial Intelligence", "Ethics"],
+			"stage": ["Planning"]
+		},
+		{
+			"id": "5e6f7g8h-9012-3456-5567-718192031425",
+			"updatedAt": "2025-03-13T21:28:54.896Z",
+			"createdAt": "2025-03-13T21:28:54.896Z",
+			"currentStageId": "7c3172ba-5399-4f79-e66e-g92a90c0fd7i",
+			"slug": "metaverse-cultural-exploration-program",
+			"name": "Metaverse Cultural Exploration Program",
+			"website": "https://www.henkaku.org/projects/metaverse-cultural-exploration",
+			"projectDescription": "Investigating cultural dynamics and expressions within virtual environments and the metaverse.",
+			"area": ["Virtual Reality", "Cultural Studies"],
+			"stage": ["Research"]
+		},
+		{
+			"id": "6f7g8h9i-0123-4567-6678-819203142536",
+			"updatedAt": "2025-03-13T21:29:54.896Z",
+			"createdAt": "2025-03-13T21:29:54.896Z",
+			"currentStageId": "8d3172ba-6399-4f79-f66e-h92a90c0fd8j",
+			"slug": "cryptocurrency-economic-transformation-study",
+			"name": "Cryptocurrency and Economic Transformation Study",
+			"website": "https://www.henkaku.org/projects/cryptocurrency-economic-transformation",
+			"projectDescription": "Analyzing the impact of cryptocurrencies on traditional economic systems and exploring future financial paradigms.",
+			"area": ["Economics", "Cryptocurrency"],
+			"stage": ["Analysis"]
+		},
+		{
+			"id": "7g8h9i0j-1234-5678-7789-920314253647",
+			"updatedAt": "2025-03-13T21:30:54.896Z",
+			"createdAt": "2025-03-13T21:30:54.896Z",
+			"currentStageId": "9e3172ba-7399-4f79-g66e-i92a90c0fd9k",
+			"slug": "digital-privacy-enhancement-strategies",
+			"name": "Digital Privacy Enhancement Strategies",
+			"website": "https://www.henkaku.org/projects/digital-privacy-enhancement",
+			"projectDescription": "Developing strategies and tools to enhance digital privacy and protect user data in the digital age.",
+			"area": ["Cybersecurity", "Privacy"],
+			"stage": ["Implementation"]
+		},
+		{
+			"id": "8h9i0j1k-2345-6789-8890-031425364758",
+			"updatedAt": "2025-03-13T21:31:54.896Z",
+			"createdAt": "2025-03-13T21:31:54.896Z",
+			"currentStageId": "af3172ba-8399-4f79-h66e-j92a90c0fdaa",
+			"slug": "synthetic-data-public-health-research",
+			"name": "Synthetic Data for Public Health Research",
+			"website": "https://www.henkaku.org/projects/synthetic-data-health-research",
+			"projectDescription": "Using synthetic datasets to drive innovation in public health research while ensuring privacy and data ethics.",
+			"area": ["Health", "Data Science"],
+			"stage": ["Pilot"]
+		},
+		{
+			"id": "9i0j1k2l-3456-7890-9901-142536475869",
+			"updatedAt": "2025-03-13T21:32:54.896Z",
+			"createdAt": "2025-03-13T21:32:54.896Z",
+			"currentStageId": "bf3172ba-9399-4f79-i66e-k92a90c0fdbb",
+			"slug": "robotics-decentralized-systems-collab",
+			"name": "Robotics and Decentralized Systems Collaboration",
+			"website": "https://www.henkaku.org/projects/robotics-decentralized-systems",
+			"projectDescription": "Building cross-functional teams to explore robotics applications in decentralized and autonomous systems.",
+			"area": ["Robotics", "Systems Design"],
+			"stage": ["Collaboration"]
+		},
+		{
+			"id": "0j1k2l3m-4567-8901-1011-253647586970",
+			"updatedAt": "2025-03-13T21:33:54.896Z",
+			"createdAt": "2025-03-13T21:33:54.896Z",
+			"currentStageId": "cf3172ba-a399-4f79-j66e-l92a90c0fdcc",
+			"slug": "connected-learning-environments-dev",
+			"name": "Connected Learning Environments Development",
+			"website": "https://www.henkaku.org/projects/connected-learning-environments",
+			"projectDescription": "Designing systems that bridge physical and digital learning spaces to enhance engagement and accessibility.",
+			"area": ["Education", "Technology"],
+			"stage": ["Ongoing"]
+		},
+		{
+			"id": "1a3c2d4e-5678-1121-3141-617181920202",
+			"updatedAt": "2025-03-13T21:35:01.000Z",
+			"createdAt": "2025-03-13T21:35:01.000Z",
+			"currentStageId": "d13172ba-1499-4f79-a66e-c92a90c0fd3f",
+			"slug": "nfts-academic-certification-project",
+			"name": "NFTs in Academic Certification Project",
+			"website": "https://www.henkaku.org/projects/nfts-academic-certification",
+			"projectDescription": "Exploring the use of blockchain and NFTs to verify, store, and share academic credentials in a secure, decentralized way.",
+			"area": ["Blockchain", "Education"],
+			"stage": ["Prototype"]
+		},
+		{
+			"id": "2b4d3e5f-6789-2234-4151-617181920203",
+			"updatedAt": "2025-03-13T21:35:30.000Z",
+			"createdAt": "2025-03-13T21:35:30.000Z",
+			"currentStageId": "e14172ba-2499-4f79-b66e-d92a90c0fd4g",
+			"slug": "cybersecurity-quantum-computing-age",
+			"name": "Cybersecurity in the Age of Quantum Computing",
+			"website": "https://www.henkaku.org/projects/quantum-cybersecurity",
+			"projectDescription": "Developing new paradigms in data security to anticipate the impact of quantum computing on encryption and privacy.",
+			"area": ["Quantum Computing", "Cybersecurity"],
+			"stage": ["Research"]
+		},
+		{
+			"id": "3c5e4f6g-7890-3345-5161-718192031414",
+			"updatedAt": "2025-03-13T21:36:10.000Z",
+			"createdAt": "2025-03-13T21:36:10.000Z",
+			"currentStageId": "f15172ba-3499-4f79-c66e-e92a90c0fd5h",
+			"slug": "inclusive-design-virtual-reality",
+			"name": "Inclusive Design in Virtual Reality Spaces",
+			"website": "https://www.henkaku.org/projects/inclusive-vr-design",
+			"projectDescription": "Designing VR environments that are accessible, inclusive, and representative of diverse user needs and identities.",
+			"area": ["Design", "Virtual Reality"],
+			"stage": ["Development"]
+		},
+		{
+			"id": "4d6f5g7h-8901-4456-6171-819203142525",
+			"updatedAt": "2025-03-13T21:36:45.000Z",
+			"createdAt": "2025-03-13T21:36:45.000Z",
+			"currentStageId": "g16172ba-4499-4f79-d66e-f92a90c0fd6i",
+			"slug": "open-source-skills-workshops",
+			"name": "Open Source Software Skill Development Workshops",
+			"website": "https://www.henkaku.org/projects/oss-skills-workshops",
+			"projectDescription": "Hosting workshops and mentorship programs to teach open source collaboration and software development practices.",
+			"area": ["Open Source", "Education"],
+			"stage": ["Ongoing"]
+		},
+		{
+			"id": "5e7g6h8i-9012-5567-7181-920314253636",
+			"updatedAt": "2025-03-13T21:37:22.000Z",
+			"createdAt": "2025-03-13T21:37:22.000Z",
+			"currentStageId": "h17172ba-5499-4f79-e66e-g92a90c0fd7j",
+			"slug": "probabilistic-computing-applications",
+			"name": "Probabilistic Computing Applications Research",
+			"website": "https://www.henkaku.org/projects/probabilistic-computing",
+			"projectDescription": "Investigating the use of probabilistic computing for solving problems in uncertain, complex systems.",
+			"area": ["Computing", "Systems Innovation"],
+			"stage": ["Exploration"]
+		},
+		{
+			"id": "6f8h7i9j-0123-6678-8192-031425364747",
+			"updatedAt": "2025-03-13T21:37:57.000Z",
+			"createdAt": "2025-03-13T21:37:57.000Z",
+			"currentStageId": "i18172ba-6499-4f79-f66e-h92a90c0fd8k",
+			"slug": "cross-cultural-communication-tech",
+			"name": "Cross-Cultural Communication Technologies",
+			"website": "https://www.henkaku.org/projects/cross-cultural-communication",
+			"projectDescription": "Designing tools and platforms that enable inclusive and context-sensitive communication across languages and cultures.",
+			"area": ["Communication", "Technology"],
+			"stage": ["Planning"]
+		},
+		{
+			"id": "7g9i8j0k-1234-7789-9203-142536475858",
+			"updatedAt": "2025-03-13T21:38:30.000Z",
+			"createdAt": "2025-03-13T21:38:30.000Z",
+			"currentStageId": "j19172ba-7499-4f79-g66e-i92a90c0fd9l",
+			"slug": "ai-climate-change-tools",
+			"name": "AI-Driven Climate Change Mitigation Tools",
+			"website": "https://www.henkaku.org/projects/ai-climate-tools",
+			"projectDescription": "Leveraging artificial intelligence to model climate risk and develop mitigation and adaptation strategies.",
+			"area": ["Climate", "Artificial Intelligence"],
+			"stage": ["Pilot"]
+		},
+		{
+			"id": "8h0j1k2l-2345-8890-0314-253647586969",
+			"updatedAt": "2025-03-13T21:39:10.000Z",
+			"createdAt": "2025-03-13T21:39:10.000Z",
+			"currentStageId": "k20172ba-8499-4f79-h66e-j92a90c0fdaa",
+			"slug": "dao-governance-study",
+			"name": "Decentralized Autonomous Organizations (DAO) Study",
+			"website": "https://www.henkaku.org/projects/dao-study",
+			"projectDescription": "Analyzing DAO structures and their implications for governance, transparency, and collaboration.",
+			"area": ["Decentralization", "Governance"],
+			"stage": ["Analysis"]
+		},
+		{
+			"id": "9i2k3l4m-3456-9901-1425-364758697070",
+			"updatedAt": "2025-03-13T21:39:42.000Z",
+			"createdAt": "2025-03-13T21:39:42.000Z",
+			"currentStageId": "l21172ba-9499-4f79-i66e-k92a90c0fdbb",
+			"slug": "human-robot-public-spaces",
+			"name": "Human-Robot Interaction in Public Spaces",
+			"website": "https://www.henkaku.org/projects/human-robot-public",
+			"projectDescription": "Exploring ethical, social, and design considerations for robots that operate in public, shared environments.",
+			"area": ["Robotics", "Public Design"],
+			"stage": ["Development"]
+		},
+		{
+			"id": "0j3l4m5n-4567-1011-2536-475869707181",
+			"updatedAt": "2025-03-13T21:40:11.000Z",
+			"createdAt": "2025-03-13T21:40:11.000Z",
+			"currentStageId": "m22172ba-a499-4f79-j66e-l92a90c0fdcc",
+			"slug": "digital-transformation-government",
+			"name": "Digital Transformation in Government Services",
+			"website": "https://www.henkaku.org/projects/digital-government",
+			"projectDescription": "Researching and prototyping digital tools to modernize and humanize public service delivery.",
+			"area": ["Civic Tech", "Digital Services"],
+			"stage": ["Prototype"]
+		},
+		{
+			"id": "1k4m5n6o-5678-1122-3647-586970718192",
+			"updatedAt": "2025-03-13T21:41:10.000Z",
+			"createdAt": "2025-03-13T21:41:10.000Z",
+			"currentStageId": "n23172ba-b499-4f79-k66e-m92a90c0fddd",
+			"slug": "biometric-data-ethics",
+			"name": "Ethical Implications of Biometric Data Use",
+			"website": "https://www.henkaku.org/projects/biometric-ethics",
+			"projectDescription": "Examining the societal and ethical implications of biometric technologies in surveillance, health, and identification.",
+			"area": ["Ethics", "Biometrics"],
+			"stage": ["Research"]
+		},
+		{
+			"id": "2l5n6o7p-6789-2233-4758-697071819203",
+			"updatedAt": "2025-03-13T21:41:50.000Z",
+			"createdAt": "2025-03-13T21:41:50.000Z",
+			"currentStageId": "o24172ba-c499-4f79-l66e-n92a90c0fdee",
+			"slug": "ar-urban-planning",
+			"name": "Augmented Reality for Urban Planning",
+			"website": "https://www.henkaku.org/projects/ar-urban-planning",
+			"projectDescription": "Developing AR tools to visualize, simulate, and collaboratively shape urban spaces and development proposals.",
+			"area": ["Urban Design", "Augmented Reality"],
+			"stage": ["Pilot"]
+		},
+		{
+			"id": "3m6o7p8q-7890-3344-5869-707182031414",
+			"updatedAt": "2025-03-13T21:42:30.000Z",
+			"createdAt": "2025-03-13T21:42:30.000Z",
+			"currentStageId": "p25172ba-d499-4f79-m66e-o92a90c0fefe",
+			"slug": "crowdsourced-health-solutions",
+			"name": "Crowdsourced Solutions for Global Health Challenges",
+			"website": "https://www.henkaku.org/projects/crowdsourced-health",
+			"projectDescription": "Harnessing collective intelligence and open calls to address pressing global health issues through innovative solutions.",
+			"area": ["Health", "Crowdsourcing"],
+			"stage": ["Ongoing"]
+		},
+		{
+			"id": "4n7p8q9r-8901-4455-6970-718203142525",
+			"updatedAt": "2025-03-13T21:43:10.000Z",
+			"createdAt": "2025-03-13T21:43:10.000Z",
+			"currentStageId": "q26172ba-e499-4f79-n66e-p92a90c0fefe",
+			"slug": "ai-accessibility-tools",
+			"name": "AI-Powered Accessibility Tools Development",
+			"website": "https://www.henkaku.org/projects/ai-accessibility-tools",
+			"projectDescription": "Designing machine learning-based tools to assist individuals with disabilities in accessing content and navigating environments.",
+			"area": ["Artificial Intelligence", "Accessibility"],
+			"stage": ["Development"]
+		},
+		{
+			"id": "5o8q9r0s-9012-5566-7071-820314253636",
+			"updatedAt": "2025-03-13T21:43:45.000Z",
+			"createdAt": "2025-03-13T21:43:45.000Z",
+			"currentStageId": "r27172ba-f499-4f79-o66e-q92a90c0feff",
+			"slug": "open-data-community-empowerment",
+			"name": "Open Data Initiatives for Community Empowerment",
+			"website": "https://www.henkaku.org/projects/open-data-empowerment",
+			"projectDescription": "Creating platforms and partnerships to make public data accessible, usable, and actionable for communities worldwide.",
+			"area": ["Open Data", "Civic Technology"],
+			"stage": ["Implementation"]
+		}
+	],
+	"profiles": [],
+	"organizations": [],
+	"articles": [
+		{
+			"id": "1k4m5n6o-5678-1122-3647-586970718192",
+			"updatedAt": "2025-03-13T21:41:10.000Z",
+			"createdAt": "2025-03-13T21:41:10.000Z",
+			"currentStageId": "n23172ba-b499-4f79-k66e-m92a90c0fddd",
+			"slug": "biometric-data-ethics",
+			"name": "Ethical Implications of Biometric Data Use",
+			"website": "https://www.henkaku.org/projects/biometric-ethics",
+			"projectDescription": "Examining the societal and ethical implications of biometric technologies in surveillance, health, and identification.",
+			"area": ["Ethics", "Biometrics"],
+			"stage": ["Research"]
+		}
+	],
+	"agendas": [
+		{
+			"id": "2a3b4c5d-6789-2233-4455-667788990011",
+			"title": "Biometric Ethics Conference Agenda",
+			"date": "2025-03-20",
+			"location": "Virtual",
+			"sessions": [
+				{
+					"id": "session-1",
+					"title": "Opening Keynote: The Future of Biometrics",
+					"startTime": "09:00 AM",
+					"endTime": "10:00 AM",
+					"speakerId": "speaker-1"
+				},
+				{
+					"id": "session-2",
+					"title": "Panel Discussion: Privacy vs. Security",
+					"startTime": "10:30 AM",
+					"endTime": "12:00 PM",
+					"speakerIds": ["speaker-2", "speaker-3"]
+				}
+			]
+		}
+	],
+	"exhibits": [
+		{
+			"id": "exhibit-1",
+			"name": "Biometric Security Solutions",
+			"description": "Showcasing cutting-edge biometric security technologies.",
+			"boothNumber": "A1"
+		}
+	],
+	"keynoteSpeakers": [
+		{
+			"id": "speaker-1",
+			"name": "Dr. Jane Smith",
+			"title": "Professor of Ethics and Technology",
+			"organization": "Tech University",
+			"bio": "Dr. Smith specializes in the ethical implications of emerging technologies."
+		}
+	],
+	"attendees": [
+		{
+			"id": "attendee-1",
+			"name": "Alice Johnson",
+			"organization": "HealthTech Inc.",
+			"role": "Researcher"
+		}
+	],
+	"sponsors": [
+		{
+			"id": "sponsor-1",
+			"name": "TechCorp",
+			"website": "https://www.techcorp.com",
+			"description": "Leading provider of biometric solutions."
+		}
+	],
+	"whitePapers": [
+		{
+			"id": "wp-1",
+			"title": "Biometric Data and Privacy",
+			"author": "Dr. Jane Smith",
+			"publishedDate": "2025-02-15",
+			"url": "https://www.example.com/whitepapers/biometric-data-privacy"
+		}
+	],
+	"unconferences": [
+		{
+			"id": "unconf-1",
+			"title": "Open Discussion: Future of Biometrics",
+			"date": "2025-03-21",
+			"time": "02:00 PM - 04:00 PM",
+			"location": "Virtual Room 1",
+			"description": "An open forum to discuss the future of biometric technologies."
+		}
+	]
+}

@@ -14,7 +14,7 @@ import {
 
 type Props = {};
 
-type AdminDataKeys = keyof typeof allAdminData;
+type AdminDataKeys = Extract<keyof typeof allAdminData, string>;
 
 const AdminPubsTable = ({}: Props) => {
 	const [tabValue, setTabValue] = useState<AdminDataKeys>('projects');
@@ -66,7 +66,7 @@ const AdminPubsTable = ({}: Props) => {
 									{Object.values(item).map((value, index) => {
 										return (
 											<TableCell key={index} className="text-nowrap">
-												{value}
+												{value || ''}
 											</TableCell>
 										);
 									})}

@@ -25,5 +25,3 @@ pnpm-debug.log*
 
 # others
 requests.http
-
-src/assets/allPubs.json
